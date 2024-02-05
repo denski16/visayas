@@ -13,16 +13,58 @@ body {
     align-items: center;
   }
 
-.visayas {
+  .visayas {
     box-shadow: 0 18px 200px -60px rgb(0, 0, 0);
     border-radius: 50px;
-    width: 2000px;
+    width: 1500px;
     position: relative;
     -webkit-backdrop-filter: blur(15px);
             backdrop-filter: blur(15px);
-    border: 2px solid rgba(255, 255, 255, 0.2509803922);
+    border: 10px solid rgba(255, 255, 255, 0.2509803922);
     padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.visayas__actions > button {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 0;
+  min-width: 250px;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: linear-gradient(45deg, #ff78ac, #77ffff);
+  box-shadow: 0 4px 30px rgba(223, 45, 70, 0.35);
+}
+@media screen and (max-width: 768px) {
+  .visayas__actions > button {
+    min-width: 170px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .visayas__actions > button {
+    min-width: inherit;
+    width: 100%;
+    max-width: 100px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .visayas__actions > button:hover {
+    transform: translateY(-5px);
+  }
+}
+.visayas__actions > button:hover {
+  box-shadow: 0 7px 30px rgba(141, 133, 255, 0.75);
+
+}
